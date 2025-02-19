@@ -1,0 +1,213 @@
+/* CSS Document */
+/* Style sheet for LJHPhotography-new index.html */
+
+/*RESET*/
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header {
+    background-color: #d1f3fd;
+    justify-content: center;
+    padding-bottom: 8%;
+    text-align: center;
+    width: 100%;
+    
+}
+
+h1 {
+    color: #105781;
+    font-family: "Goudy Old Style", serif;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+   
+    
+}
+
+/*NAVIGTION SIDE PANEL*/
+
+.navpanel {
+    background-color: #9ecddf;
+    height:45%;
+    overflow-x: hidden;
+    padding-top: 2%;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: 0.5s;
+    width: 0;
+    z-index: 1;
+}
+
+.navpanel a {
+    color:#105781;
+    display: block;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navpanel a:hover {
+    color: #e7f8ff;
+  }
+
+.openbtn {
+    background-color: #d1f3fd;
+    border: none;
+    color: #105781;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 15px;
+    position: absolute; 
+    right: 15px; 
+    top: 15px;
+}
+
+.openbtn:hover {
+    background-color: #9ecddf;
+  }
+
+  /*SLIDESHOW*/
+
+  #slideshow {
+    box-sizing:border-box;
+    border:5px solid #105781;
+    margin: 5%;
+  }
+
+  .slideshow {
+    
+    margin:auto;
+    max-width: 75%;
+    position: relative;
+    padding: 10%;
+  }
+
+  .slideimages {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position:absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #105781;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #105781;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #9ecddf;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*MISSION STATEMENT*/
+
+h2 {
+    color: #105781;
+    font-family: "Goudy Old Style", serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+body {
+    color: #48758a;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
+.missionstatement {
+    background-color: #d1f3fd;
+    border-radius: 10px;
+    padding: 10%;
+    margin:5%;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: #d1f3fd;
+    border-radius: 10px;
+    padding: 10%;
+    margin:5%;
+    text-align: center;
+}
+
+#followme {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    align-items: center;
+    background-color: #9ecddf;
+    display: flex;
+    font-size: 20px;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    font-size: 17px;
+    gap: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li a {
+    color: #105781;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #e7f8ff;
+}

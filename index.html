@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Lara Hilgenhold Photography">
+    <meta name="description" content="Webpage for Lara Hilgenhold Photography">
+    <link rel="stylesheet" href="css/ljhphotostylesnew.css">
+    <script src="ljhphotojs.js" defer></script>
+    <title>Lara Hilgenhold Photography</title>
+</head>
+<body>
+    <header>
+        <img height="300" src="images/LJHMonogramLogo.png" alt="Lara Hilgenhold Photography Monogram Logo">
+        <h1> Lara Hilgenhold Photography </h1>
+       <nav>
+            <div id="navigationpanel" class="navpanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+       </nav> 
+       <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+
+    </header>
+    <section id=slideshow>
+        <div class="slideshow">
+        <!--slideshow gallery-->
+            <div class="slideimages fade">
+                <img src="images/iris-revised.jpg" alt="Iris" style="width:100%">
+            </div>
+
+            <div class="slideimages fade">
+                <img src="images/13-Maymont_japanese_garden_stone_bridge_4-13-23.jpg" alt="stone bridge in Japanese style garden" style="width:100%">
+            </div>
+
+            <div class="slideimages fade">
+                <img src="images/Great_spangled_fritillary_left_sunflower_8-20-23.jpg" alt="butterfly on a sunflower" style="width:100%">
+            </div>
+        <!--next and back buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!--dots-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id=missionstatement>
+        <div class="missionstatement">
+             <h2>Photography for a Purpose</h2>
+            <br/>
+            <p>From "honeymoon phase" couples to the annual family photo session, I've got you covered! My purpose as a photographer is to help capture life's fleeting moments for you and your family to enjoy throughout the years.</p>
+        </div>
+    </section>
+
+    <section id=testimonials>
+        <div class="testimonials">
+            <h2> Testimonials</h2>
+            <br/>
+            <p>Insert testimonials here</p>
+        </div>
+        
+            <p id=followme>Follow Me!</p>
+        <br/>
+        <div class="socials">
+            <a href="https://www.instagram.com/ljhilgenhold_photography/"><img height="50" src="images/instagramlogo.png" alt="instagram logo" /></a>
+            <a href="https://www.facebook.com/ljhilgenholdphotography"><img height="50" src="images/Facebook-Logo.png" alt= "facebook logo" /></a>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href='#top'> Back to Top</a></li>
+            <li><a href="#contactinfo.html">Contact Info</a></li>
+            <li><a href="#services">Services Offered</a></li>
+        </ul>
+    </footer>
+</body>
